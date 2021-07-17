@@ -8,6 +8,10 @@ npx create-react-app react-with-typescript --template typescript
 - Functional
 - Class
 
+## Types of state
+- useState
+- setState
+
 ## Functional component
 There was 2 ways of creating functional component
 
@@ -51,3 +55,12 @@ Advantages
 
 Disadvantages
 - Longer code
+
+## Class component
+- To be study
+
+## useState
+- For functional component
+
+## setState
+- For class component
