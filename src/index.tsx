@@ -1,10 +1,9 @@
 import ReactDOM from 'react-dom';
-import Parent from './testing/components/Parent';
+import GuestList from './testing/GuestList';
 
 const App = () => {
     return <div>
-        <h1>Hello world</h1>
-        <Parent />
+        <GuestList />
     </div>
 }
 
