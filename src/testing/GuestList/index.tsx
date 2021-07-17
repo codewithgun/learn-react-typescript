@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import AddGuest from './AddGuest';
 import { Guest } from './models/Guest';
+import SearchGuest from './SearchGuest';
 
 const GuestList: React.FC = () => {
     const [guests, setGuests] = useState<Guest[]>([]);
@@ -23,6 +24,7 @@ const GuestList: React.FC = () => {
             </tbody>
         </table>
         <AddGuest setGuests={setGuests} guests={guests} />
+        <SearchGuest guests={guests} />
     </div>
 }
 

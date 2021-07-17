@@ -16,12 +16,22 @@ const AddGuest: React.FC<AddGuestProps> = ({ setGuests, guests }) => {
             setGuests([...guests, newGuest]);
         }
     }
+
+    const onNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setName(e.target.value);
+    }
+
+    const onAgeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setAge(e.target.value ? Number.parseInt(e.target.value) : 0);
+    }
+
     return <div>
+        <h1>Add Guest</h1>
         <div>
-            <input value={name} type="text" onChange={(e) => setName(e.target.value)} />
+            <input value={name} type="text" onChange={onNameChange} />
         </div>
         <div>
-            <input value={age} type="number" onChange={(e) => setAge(e.target.value ? Number.parseInt(e.target.value) : 0)} />
+            <input value={age} type="number" onChange={onAgeChange} />
         </div>
         <button onClick={addGuest}>Add</button>
     </div>
