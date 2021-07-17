@@ -56,11 +56,23 @@ Advantages
 Disadvantages
 - Longer code
 
+### Overview on functional component
+- The return value is JSX
+- State must be manage using `useState`
+- Access state without using `this.state`
+- Shorter and cleaner code
+
 ## Class component
-- To be study
+- Use `render()` function to render JSX
+- State can be manage using `useState` or `setState`
+- If `setState` used, we must access state using `this.state`
+- Accessing props require `this.props`
+- Longer code
+---
 
 ## useState
-- For functional component
+- For functional component, and class component as well
+- Also known as react hook
 
 ## setState
 - For class component
