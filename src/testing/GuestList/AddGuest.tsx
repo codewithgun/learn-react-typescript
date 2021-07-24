@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Guest } from './models/Guest';
 
 interface AddGuestProps {
@@ -7,6 +7,7 @@ interface AddGuestProps {
 }
 
 const AddGuest: React.FC<AddGuestProps> = ({ setGuests, guests }) => {
+    const inputNameRef = useRef<HTMLInputElement | null>(null);
     const [age, setAge] = useState<number>(0);
     const [name, setName] = useState<string>('');
     const addGuest = () => {
@@ -28,7 +29,7 @@ const AddGuest: React.FC<AddGuestProps> = ({ setGuests, guests }) => {
     return <div>
         <h1>Add Guest</h1>
         <div>
-            <input value={name} type="text" onChange={onNameChange} />
+            <input ref={inputNameRef} value={name} type="text" onChange={onNameChange} />
         </div>
         <div>
             <input value={age} type="number" onChange={onAgeChange} />

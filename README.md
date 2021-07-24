@@ -76,3 +76,4 @@ Disadvantages
 
 ## setState
 - For class component
+
