@@ -71,9 +71,21 @@ Disadvantages
 ---
 
 ## useState
-- For functional component, and class component as well
+- For functional component
 - Also known as react hook
+- It is the state of the functional component
 
 ## setState
 - For class component
+- It is the state of the class component
 
+## useRef
+- For functional component
+- Used to reference DOM from react component
+
+## React.createRef()
+- For class component
+- Used to reference DOM from react component
+
+## useEffect
+- For functional component
