@@ -4,8 +4,8 @@ import { GuestListClassComponent } from './testing/GuestListClassComponent';
 
 const App = () => {
     return <div>
-        {/* <GuestList /> */}
-        <GuestListClassComponent />
+        <GuestList />
+        {/* <GuestListClassComponent /> */}
     </div>
 }
 
