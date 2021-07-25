@@ -79,6 +79,8 @@ Disadvantages
 - For class component
 - It is the state of the class component
 
+---
+
 ## useRef
 - For functional component
 - Used to reference DOM from react component
@@ -87,5 +89,16 @@ Disadvantages
 - For class component
 - Used to reference DOM from react component
 
+---
+
 ## useEffect
 - For functional component
+- Fired after the component rendered
+- Clean up effect by returning a `function` in the `useEffect` callback
+- Unify lifecycles into one `useEffect`
+
+## lifecycle
+- For class component
+- `componentDidMount` fired after first render
+- `componentDidUpdate` fired after update render
+- Clean up effect in `componentDidMount` using `componentWillUnmount`
