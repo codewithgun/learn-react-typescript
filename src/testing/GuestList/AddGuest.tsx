@@ -20,7 +20,7 @@ const AddGuest: React.FC<AddGuestProps> = ({ setGuests, guests }) => {
 
     useEffect(() =>{
         inputNameRef.current?.focus();
-    });
+    }, []);
 
     const onNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setName(e.target.value);

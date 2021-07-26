@@ -95,6 +95,8 @@ Disadvantages
 - For functional component
 - Fired after the component rendered
 - Clean up effect by returning a `function` in the `useEffect` callback
+- useEffect((() =>  {}), []), we pass `state` variable into `[]`, everytime the `state` passed change, the callback in useEffect will be fired. If it was empty (`[]`), it is same as `componentDidMount`
+- useEffect(() => {}) is same as `componentDidUpdate`
 - Unify lifecycles into one `useEffect`
 
 ## lifecycle
