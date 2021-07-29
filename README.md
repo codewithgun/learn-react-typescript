@@ -104,3 +104,5 @@ Disadvantages
 - `componentDidMount` fired after first render
 - `componentDidUpdate` fired after update render
 - Clean up effect in `componentDidMount` using `componentWillUnmount`
+
+---
