@@ -33,12 +33,12 @@ const AddGuest: React.FC<AddGuestProps> = ({ setGuests, guests }) => {
     return <div>
         <h1>Add Guest</h1>
         <div>
-            <input ref={inputNameRef} value={name} type="text" onChange={onNameChange} />
+            <input className='form-control' ref={inputNameRef} value={name} type="text" onChange={onNameChange} />
         </div>
         <div>
-            <input value={age} type="number" onChange={onAgeChange} />
+            <input value={age} className='form-control' type="number" onChange={onAgeChange} />
         </div>
-        <button onClick={addGuest}>Add</button>
+        <button type='button' className='btn btn-primary' onClick={addGuest}>Add</button>
     </div>
 }
 

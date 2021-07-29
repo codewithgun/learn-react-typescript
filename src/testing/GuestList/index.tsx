@@ -5,9 +5,9 @@ import SearchGuest from './SearchGuest';
 
 const GuestList: React.FC = () => {
     const [guests, setGuests] = useState<Guest[]>([]);
-    return <div>
+    return <div className='container'>
         <h1>Guest list</h1>
-        <table>
+        <table className='table'>
             <thead>
                 <tr>
                     <th>Name</th>

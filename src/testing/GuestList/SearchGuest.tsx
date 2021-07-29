@@ -20,9 +20,9 @@ const SearchGuest: React.FC<SearchGuestProps> = ({ guests }) => {
 
     return <div>
         <h1>Search Guest</h1>
-        <input value={searchName} type="text" onChange={searchGuest} />
-        < div > Result</div>
-        <table>
+        <input className="form-control" value={searchName} type="text" onChange={searchGuest} />
+        <div> Result</div>
+        <table className="table">
             <thead>
                 <tr>
                     <th>Name</th>
