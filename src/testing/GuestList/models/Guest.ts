@@ -1,4 +1,4 @@
 export interface Guest {
-    name: string;
-    age: number;
+	name: string;
+	age: number;
 }
